@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8215D0B729210109002A491E /* SavyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215D0B629210109002A491E /* SavyApp.swift */; };
+		8215D0B929210109002A491E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215D0B829210109002A491E /* ContentView.swift */; };
+		8215D0BB2921010A002A491E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8215D0BA2921010A002A491E /* Assets.xcassets */; };
+		8215D0BE2921010A002A491E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8215D0BD2921010A002A491E /* Preview Assets.xcassets */; };
+		8215D0C02921010A002A491E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215D0BF2921010A002A491E /* Persistence.swift */; };
+		8215D0C32921010A002A491E /* Savy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8215D0C12921010A002A491E /* Savy.xcdatamodeld */; };
+		8215D0CD2921010A002A491E /* SavyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215D0CC2921010A002A491E /* SavyTests.swift */; };
+		8215D0D72921010A002A491E /* SavyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215D0D62921010A002A491E /* SavyUITests.swift */; };
+		8215D0D92921010A002A491E /* SavyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215D0D82921010A002A491E /* SavyUITestsLaunchTests.swift */; };
+		8215D0E92921027D002A491E /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 8215D0E52921027C002A491E /* Model */; };
+		8215D0EA2921027D002A491E /* ViewModel in Resources */ = {isa = PBXBuildFile; fileRef = 8215D0E62921027D002A491E /* ViewModel */; };
+		8215D0EB2921027D002A491E /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = 8215D0E72921027D002A491E /* Controller */; };
+		8215D0EC2921027D002A491E /* View in Resources */ = {isa = PBXBuildFile; fileRef = 8215D0E82921027D002A491E /* View */; };
+		8949282D73C962E0F0DE8D37 /* Pods_Savy_SavyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F919DE6BB88F166501E8DF6 /* Pods_Savy_SavyUITests.framework */; };
+		C92EB2832FDB1E742050E8A2 /* Pods_SavyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C3BB3C836C414A48E19B23 /* Pods_SavyTests.framework */; };
+		DA768224D9C109048031808D /* Pods_Savy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640020A425FA0164AB878D62 /* Pods_Savy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8215D0C92921010A002A491E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8215D0AB29210108002A491E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8215D0B229210109002A491E;
+			remoteInfo = Savy;
+		};
+		8215D0D32921010A002A491E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8215D0AB29210108002A491E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8215D0B229210109002A491E;
+			remoteInfo = Savy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F919DE6BB88F166501E8DF6 /* Pods_Savy_SavyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Savy_SavyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32C3BB3C836C414A48E19B23 /* Pods_SavyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFF4497430EC05A87985ADE /* Pods-Savy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Savy.debug.xcconfig"; path = "Target Support Files/Pods-Savy/Pods-Savy.debug.xcconfig"; sourceTree = "<group>"; };
+		640020A425FA0164AB878D62 /* Pods_Savy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Savy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C052ADFC368678D70F9DA0 /* Pods-Savy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Savy.release.xcconfig"; path = "Target Support Files/Pods-Savy/Pods-Savy.release.xcconfig"; sourceTree = "<group>"; };
+		7752919D9F0C8773B8929C61 /* Pods-SavyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavyTests.debug.xcconfig"; path = "Target Support Files/Pods-SavyTests/Pods-SavyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8215D0B329210109002A491E /* Savy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8215D0B629210109002A491E /* SavyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavyApp.swift; sourceTree = "<group>"; };
+		8215D0B829210109002A491E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8215D0BA2921010A002A491E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8215D0BD2921010A002A491E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8215D0BF2921010A002A491E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		8215D0C22921010A002A491E /* Savy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Savy.xcdatamodel; sourceTree = "<group>"; };
+		8215D0C82921010A002A491E /* SavyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8215D0CC2921010A002A491E /* SavyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavyTests.swift; sourceTree = "<group>"; };
+		8215D0D22921010A002A491E /* SavyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8215D0D62921010A002A491E /* SavyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavyUITests.swift; sourceTree = "<group>"; };
+		8215D0D82921010A002A491E /* SavyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8215D0E52921027C002A491E /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		8215D0E62921027D002A491E /* ViewModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewModel; sourceTree = "<group>"; };
+		8215D0E72921027D002A491E /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
+		8215D0E82921027D002A491E /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
+		B4EDCBDC8D92F9127E16E548 /* Pods-Savy-SavyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Savy-SavyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Savy-SavyUITests/Pods-Savy-SavyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC51659B6DDA28021764DFC8 /* Pods-SavyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavyTests.release.xcconfig"; path = "Target Support Files/Pods-SavyTests/Pods-SavyTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE8DF75EE561F08450EA1EDD /* Pods-Savy-SavyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Savy-SavyUITests.release.xcconfig"; path = "Target Support Files/Pods-Savy-SavyUITests/Pods-Savy-SavyUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8215D0B029210109002A491E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA768224D9C109048031808D /* Pods_Savy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8215D0C52921010A002A491E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C92EB2832FDB1E742050E8A2 /* Pods_SavyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8215D0CF2921010A002A491E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8949282D73C962E0F0DE8D37 /* Pods_Savy_SavyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		492660ECBDB98B10ADB3FF91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				640020A425FA0164AB878D62 /* Pods_Savy.framework */,
+				1F919DE6BB88F166501E8DF6 /* Pods_Savy_SavyUITests.framework */,
+				32C3BB3C836C414A48E19B23 /* Pods_SavyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49C39A78D2DF1D42F0773E82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BFF4497430EC05A87985ADE /* Pods-Savy.debug.xcconfig */,
+				75C052ADFC368678D70F9DA0 /* Pods-Savy.release.xcconfig */,
+				B4EDCBDC8D92F9127E16E548 /* Pods-Savy-SavyUITests.debug.xcconfig */,
+				EE8DF75EE561F08450EA1EDD /* Pods-Savy-SavyUITests.release.xcconfig */,
+				7752919D9F0C8773B8929C61 /* Pods-SavyTests.debug.xcconfig */,
+				CC51659B6DDA28021764DFC8 /* Pods-SavyTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8215D0AA29210108002A491E = {
+			isa = PBXGroup;
+			children = (
+				8215D0B529210109002A491E /* Savy */,
+				8215D0CB2921010A002A491E /* SavyTests */,
+				8215D0D52921010A002A491E /* SavyUITests */,
+				8215D0B429210109002A491E /* Products */,
+				49C39A78D2DF1D42F0773E82 /* Pods */,
+				492660ECBDB98B10ADB3FF91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8215D0B429210109002A491E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8215D0B329210109002A491E /* Savy.app */,
+				8215D0C82921010A002A491E /* SavyTests.xctest */,
+				8215D0D22921010A002A491E /* SavyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8215D0B529210109002A491E /* Savy */ = {
+			isa = PBXGroup;
+			children = (
+				8215D0E72921027D002A491E /* Controller */,
+				8215D0E52921027C002A491E /* Model */,
+				8215D0E82921027D002A491E /* View */,
+				8215D0E62921027D002A491E /* ViewModel */,
+				8215D0B629210109002A491E /* SavyApp.swift */,
+				8215D0B829210109002A491E /* ContentView.swift */,
+				8215D0BA2921010A002A491E /* Assets.xcassets */,
+				8215D0BF2921010A002A491E /* Persistence.swift */,
+				8215D0C12921010A002A491E /* Savy.xcdatamodeld */,
+				8215D0BC2921010A002A491E /* Preview Content */,
+			);
+			path = Savy;
+			sourceTree = "<group>";
+		};
+		8215D0BC2921010A002A491E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8215D0BD2921010A002A491E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8215D0CB2921010A002A491E /* SavyTests */ = {
+			isa = PBXGroup;
+			children = (
+				8215D0CC2921010A002A491E /* SavyTests.swift */,
+			);
+			path = SavyTests;
+			sourceTree = "<group>";
+		};
+		8215D0D52921010A002A491E /* SavyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8215D0D62921010A002A491E /* SavyUITests.swift */,
+				8215D0D82921010A002A491E /* SavyUITestsLaunchTests.swift */,
+			);
+			path = SavyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8215D0B229210109002A491E /* Savy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8215D0DC2921010A002A491E /* Build configuration list for PBXNativeTarget "Savy" */;
+			buildPhases = (
+				26CE0296062ABE29BCEFE26F /* [CP] Check Pods Manifest.lock */,
+				8215D0AF29210109002A491E /* Sources */,
+				8215D0B029210109002A491E /* Frameworks */,
+				8215D0B129210109002A491E /* Resources */,
+				0AC8ECADF4AB99813312B1E4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Savy;
+			productName = Savy;
+			productReference = 8215D0B329210109002A491E /* Savy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8215D0C72921010A002A491E /* SavyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8215D0DF2921010A002A491E /* Build configuration list for PBXNativeTarget "SavyTests" */;
+			buildPhases = (
+				5DA00F513BB690FA73180C46 /* [CP] Check Pods Manifest.lock */,
+				8215D0C42921010A002A491E /* Sources */,
+				8215D0C52921010A002A491E /* Frameworks */,
+				8215D0C62921010A002A491E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8215D0CA2921010A002A491E /* PBXTargetDependency */,
+			);
+			name = SavyTests;
+			productName = SavyTests;
+			productReference = 8215D0C82921010A002A491E /* SavyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8215D0D12921010A002A491E /* SavyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8215D0E22921010A002A491E /* Build configuration list for PBXNativeTarget "SavyUITests" */;
+			buildPhases = (
+				AE93B7A490B5B0F78FD3906A /* [CP] Check Pods Manifest.lock */,
+				8215D0CE2921010A002A491E /* Sources */,
+				8215D0CF2921010A002A491E /* Frameworks */,
+				8215D0D02921010A002A491E /* Resources */,
+				7608A72103639EA977D45101 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8215D0D42921010A002A491E /* PBXTargetDependency */,
+			);
+			name = SavyUITests;
+			productName = SavyUITests;
+			productReference = 8215D0D22921010A002A491E /* SavyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8215D0AB29210108002A491E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					8215D0B229210109002A491E = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					8215D0C72921010A002A491E = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 8215D0B229210109002A491E;
+					};
+					8215D0D12921010A002A491E = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 8215D0B229210109002A491E;
+					};
+				};
+			};
+			buildConfigurationList = 8215D0AE29210108002A491E /* Build configuration list for PBXProject "Savy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8215D0AA29210108002A491E;
+			productRefGroup = 8215D0B429210109002A491E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8215D0B229210109002A491E /* Savy */,
+				8215D0C72921010A002A491E /* SavyTests */,
+				8215D0D12921010A002A491E /* SavyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8215D0B129210109002A491E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8215D0E92921027D002A491E /* Model in Resources */,
+				8215D0EA2921027D002A491E /* ViewModel in Resources */,
+				8215D0BE2921010A002A491E /* Preview Assets.xcassets in Resources */,
+				8215D0EB2921027D002A491E /* Controller in Resources */,
+				8215D0BB2921010A002A491E /* Assets.xcassets in Resources */,
+				8215D0EC2921027D002A491E /* View in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8215D0C62921010A002A491E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8215D0D02921010A002A491E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC8ECADF4AB99813312B1E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Savy/Pods-Savy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Savy/Pods-Savy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Savy/Pods-Savy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26CE0296062ABE29BCEFE26F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Savy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DA00F513BB690FA73180C46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SavyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7608A72103639EA977D45101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Savy-SavyUITests/Pods-Savy-SavyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Savy-SavyUITests/Pods-Savy-SavyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Savy-SavyUITests/Pods-Savy-SavyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE93B7A490B5B0F78FD3906A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Savy-SavyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8215D0AF29210109002A491E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8215D0C32921010A002A491E /* Savy.xcdatamodeld in Sources */,
+				8215D0C02921010A002A491E /* Persistence.swift in Sources */,
+				8215D0B929210109002A491E /* ContentView.swift in Sources */,
+				8215D0B729210109002A491E /* SavyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8215D0C42921010A002A491E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8215D0CD2921010A002A491E /* SavyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8215D0CE2921010A002A491E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8215D0D72921010A002A491E /* SavyUITests.swift in Sources */,
+				8215D0D92921010A002A491E /* SavyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8215D0CA2921010A002A491E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8215D0B229210109002A491E /* Savy */;
+			targetProxy = 8215D0C92921010A002A491E /* PBXContainerItemProxy */;
+		};
+		8215D0D42921010A002A491E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8215D0B229210109002A491E /* Savy */;
+			targetProxy = 8215D0D32921010A002A491E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8215D0DA2921010A002A491E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8215D0DB2921010A002A491E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8215D0DD2921010A002A491E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BFF4497430EC05A87985ADE /* Pods-Savy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Savy/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.Savy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8215D0DE2921010A002A491E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C052ADFC368678D70F9DA0 /* Pods-Savy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Savy/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.Savy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8215D0E02921010A002A491E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7752919D9F0C8773B8929C61 /* Pods-SavyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.SavyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Savy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Savy";
+			};
+			name = Debug;
+		};
+		8215D0E12921010A002A491E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC51659B6DDA28021764DFC8 /* Pods-SavyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.SavyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Savy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Savy";
+			};
+			name = Release;
+		};
+		8215D0E32921010A002A491E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4EDCBDC8D92F9127E16E548 /* Pods-Savy-SavyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.SavyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Savy;
+			};
+			name = Debug;
+		};
+		8215D0E42921010A002A491E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8DF75EE561F08450EA1EDD /* Pods-Savy-SavyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esprit.SavyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Savy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8215D0AE29210108002A491E /* Build configuration list for PBXProject "Savy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8215D0DA2921010A002A491E /* Debug */,
+				8215D0DB2921010A002A491E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8215D0DC2921010A002A491E /* Build configuration list for PBXNativeTarget "Savy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8215D0DD2921010A002A491E /* Debug */,
+				8215D0DE2921010A002A491E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8215D0DF2921010A002A491E /* Build configuration list for PBXNativeTarget "SavyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8215D0E02921010A002A491E /* Debug */,
+				8215D0E12921010A002A491E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8215D0E22921010A002A491E /* Build configuration list for PBXNativeTarget "SavyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8215D0E32921010A002A491E /* Debug */,
+				8215D0E42921010A002A491E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8215D0C12921010A002A491E /* Savy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8215D0C22921010A002A491E /* Savy.xcdatamodel */,
+			);
+			currentVersion = 8215D0C22921010A002A491E /* Savy.xcdatamodel */;
+			path = Savy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8215D0AB29210108002A491E /* Project object */;
+}
